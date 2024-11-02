@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Atma:wght@300;400;500;600;700&display=swap');
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    height: 70px;
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c33d3d;
+}
+
+.header h1 {
+    font-family: 'Arima';
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.body {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #000;
+    padding: 10px;
+}
+
+.profile h1 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.profile h1 b {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.profile button {
+    padding: 5px;
+}
+
+.login {
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login .wrapper input {
+    border: 2px solid #c33d3d;
+    padding: 5px;
+}
+
+.login button {
+    padding: 8px 20px;
+    background-color: #c33d3d;
+    color: #fff;
+    border: none;
+}
+
+.login h2 {
+    font-size: 1rem;
+    color: rgb(16, 0, 192);
+    text-decoration: underline;
+}
+
+.login h3 {
+    color: #c33d3d;
+    font-size: 0.8rem;
+}
+
+.convos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.convos .user {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 10px 2px #ccc;
+    padding-block: 10px;
+    margin-top: 10px;
+}
+
+.convos .user h1 {
+    font-size: 1rem;
+}
+
+.user-convo .messages {
+    height: 40vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.user-convo .messages h1 {
+    font-size: 0.8rem;
+    background-color: #9bffb6;
+    font-weight: 100;
+    padding: 5px 8px;
+    border-radius: 8px;
+    color: #000;
+    margin-inline: 5px;
+    max-width: 60vw;
+}
+
+.user-convo .messages h1:first-child {
+    margin-top: 10px;
+}
+
+.user-convo .messages h1:last-child {
+    margin-bottom: 10px;
+}
+
+.user-convo .inputs {
+    display: flex;
+}
+
+.user-convo .inputs input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #4e1dff;
+}
+
+.user-convo .inputs button {
+    padding: 10px;
+    background-color: #4e1dff;
+    color: #fff;
+    border: none;
+}
