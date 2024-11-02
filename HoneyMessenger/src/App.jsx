@@ -4,6 +4,9 @@ import { socket } from './socket'
 
 const url = "https://honeymessenger-api.onrender.com"
 
+// https://honeymessenger-api.onrender.com
+// http://localhost:3000
+
 function App() {
     const [user, setUser] = useState(null)
     const [isLoginPage, setIsLoginPage] = useState(true)
@@ -87,6 +90,7 @@ function App() {
     const logout = () => {
         localStorage.clear('honeyUser')
         setUser(null)
+        setIsUsersTogg(true)
     }
 
     const handleConvo = (to) => {
@@ -136,8 +140,12 @@ function App() {
                 <>
                     <div className='profile'>
                         <h1>Logged in as: <b>{user.username}</b></h1>
-                        <h1>Chatting with: <b>{toName}</b></h1>
-                        {!isUsersTogg && <button onClick={handleBackConvo}>back</button>}
+                        {!isUsersTogg &&
+                            <>
+                                <h1>Chatting with: <b>{toName}</b></h1>
+                                <button onClick={handleBackConvo}>back</button>
+                            </>
+                        }
                     </div>
                     {isUsersTogg ?
                         <div className='convos'>
@@ -151,7 +159,7 @@ function App() {
                         <div className='user-convo'>
                             <div className='messages'>
                                 {messages.map((mssg, i) => (
-                                    <h1 style={mssg.from == user.email ? { alignSelf: "flex-end" } : null} key={i}>{mssg.message}</h1>
+                                    <h1 style={mssg.from == user.email ? { alignSelf: "flex-end", backgroundColor: "#75f8ff" } : null} key={i}>{mssg.message}</h1>
                                 ))}
                                 <div ref={bottomRef}></div>
                             </div>

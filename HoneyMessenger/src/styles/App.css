@@ -7,7 +7,7 @@
 }
 
 .header {
-    height: 70px;
+    height: 10vh;
     padding-inline: 15px;
     display: flex;
     justify-content: space-between;
@@ -35,26 +35,28 @@
 }
 
 .profile {
+    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: 10px;
     background-color: #000;
-    padding: 10px;
+    padding-inline: 10px;
 }
 
 .profile h1 {
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .profile h1 b {
     color: aqua;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .profile button {
-    padding: 5px;
+    padding: 4px 5px;
 }
 
 .login {
@@ -116,8 +118,14 @@
     font-size: 1rem;
 }
 
+.user-convo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 74vh;
+}
+
 .user-convo .messages {
-    height: 40vh;
     overflow: scroll;
     display: flex;
     flex-direction: column;
@@ -127,9 +135,9 @@
 
 .user-convo .messages h1 {
     font-size: 0.8rem;
-    background-color: #9bffb6;
+    background-color: #ffadad;
     font-weight: 100;
-    padding: 5px 8px;
+    padding: 8px 12px;
     border-radius: 8px;
     color: #000;
     margin-inline: 5px;
@@ -146,17 +154,22 @@
 
 .user-convo .inputs {
     display: flex;
+    min-height: 5vh;
+    padding-inline: 6px;
+    gap: 5px;
 }
 
 .user-convo .inputs input {
     flex-grow: 1;
-    padding: 10px;
+    padding-inline: 10px;
     border: 2px solid #4e1dff;
+    border-radius: 8px;
 }
 
 .user-convo .inputs button {
-    padding: 10px;
-    background-color: #4e1dff;
-    color: #fff;
-    border: none;
+    padding-inline: 10px;
+    background-color: #fff;
+    color: #4e1dff;
+    border: 2px solid #4e1dff;
+    border-radius: 8px;
 }
