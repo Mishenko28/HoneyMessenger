@@ -124,7 +124,7 @@ io.on('connection', (socket) => {
 
 mongoose.connect("mongodb+srv://johnthomasalog:Thomas%40121323@honey-messenger.kwayu.mongodb.net/Honey")
     .then(() => {
-        server.listen(3000, () => {
-            console.log('server running at http://localhost:3000')
+        server.listen(8000, () => {
+            console.log('server running at port 8000')
         })
     })
