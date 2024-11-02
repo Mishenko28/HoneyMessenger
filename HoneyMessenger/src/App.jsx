@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import './styles/App.css'
 import { socket } from './socket'
 
-const url = "http://localhost:3000"
+const url = "https://honeymessenger-api.onrender.com"
 
 function App() {
     const [user, setUser] = useState(null)
