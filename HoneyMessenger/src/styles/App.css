@@ -3,11 +3,11 @@
 #root {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100svh;
 }
 
 .header {
-    height: 10vh;
+    height: 10svh;
     padding-inline: 15px;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 }
 
 .profile {
-    height: 15vh;
+    height: 15svh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -122,7 +122,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 74vh;
+    height: 74svh;
 }
 
 .user-convo .messages {
@@ -136,7 +136,7 @@
 .user-convo .messages h1 {
     font-size: 0.8rem;
     background-color: #ffadad;
-    font-weight: 100;
+    font-weight: 500;
     padding: 8px 12px;
     border-radius: 8px;
     color: #000;
@@ -154,7 +154,7 @@
 
 .user-convo .inputs {
     display: flex;
-    min-height: 5vh;
+    min-height: 5svh;
     padding-inline: 6px;
     gap: 5px;
 }
